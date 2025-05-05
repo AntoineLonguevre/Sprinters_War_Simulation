@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-60c903ebdf87be902492318b966157d7"}, "mark": {"type": "bar"}, "encoding": {"color": {"condition": {"test": "datum.Slope < 0", "value": "#2ca02c"}, "value": "#d62728"}, "tooltip": [{"field": "Name", "type": "nominal"}, {"field": "Slope", "type": "quantitative"}], "x": {"field": "Slope", "title": "Regression Slope (\u0394 time per race)", "type": "quantitative"}, "y": {"field": "Name", "sort": "-x", "title": "Sprinter", "type": "nominal"}}, "height": 300, "title": "\ud83d\udcc9 Sprinters' Season Progression (Negative = Improving)", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.17.0.json", "datasets": {"data-60c903ebdf87be902492318b966157d7": [{"Name": "Noah LYLES", "Slope": -0.021401462458862694}, {"Name": "Kishane THOMPSON", "Slope": -0.013931477796275953}, {"Name": "Fred KERLEY", "Slope": -0.008546485875825021}, {"Name": "Akani SIMBINE", "Slope": -0.0068474965117404606}, {"Name": "Lamont Marcell JACOBS", "Slope": -0.004514830043468668}, {"Name": "Christian COLEMAN", "Slope": -0.004494418146958961}, {"Name": "Letsile TEBOGO", "Slope": -0.0015221202606586618}, {"Name": "Oblique SEVILLE", "Slope": -0.0013136216559072461}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
