@@ -8,7 +8,7 @@ Inspired by Formula 1 and modern entertainment-focused sports formats, the leagu
 
 ## 📦 Project Structure
 
-
+```
 Sprinters_War_Simulation/
 │
 ├── data/              # Raw and processed data (athlete profiles, features)
@@ -22,6 +22,7 @@ Sprinters_War_Simulation/
 │   └── prediction_Sprinters_War_2025.ipynb # Modeling and simulation notebook for the championship
 │
 └── README.md          # Project documentation
+```
 
 # 🧠 Project Context
 
