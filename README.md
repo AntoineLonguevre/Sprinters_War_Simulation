@@ -110,6 +110,21 @@ The main technique used is **Quantile Regression**, which allows the model to:
 
 ---
 
+# 📊 Figures Visualization
+
+The following visualizations are available as standalone interactive `.html` files and can be accessed via GitHub Pages:
+
+- 🔗 [Average performance per athlete](https://antoinelonguevre.github.io/Sprinters_War_Simulation/figures/average_perf_per_athlete.html)  
+- 🔗 [Championship standings](https://antoinelonguevre.github.io/Sprinters_War_Simulation/figures/classement_sprinters_war.html)  
+- 🔗 [Top 8 performance chart](https://antoinelonguevre.github.io/Sprinters_War_Simulation/figures/perf_top8_chart.html)  
+- 🔗 [Season best per athlete](https://antoinelonguevre.github.io/Sprinters_War_Simulation/figures/season_best_per_athlete.html)  
+- 🔗 [Top 8 progression over the season](https://antoinelonguevre.github.io/Sprinters_War_Simulation/figures/top8_progression.html)  
+- 🔗 [Top 10 individual performances](https://antoinelonguevre.github.io/Sprinters_War_Simulation/figures/top_10_individual_performances.html)
+
+These HTML files can be opened directly in your browser, enabling zooming, tooltips, and interactive data exploration.
+
+---
+
 # 🤖 Why This Project Matters
 
 Sprint performance analytics is often underutilized in sports data science. This project explores:
